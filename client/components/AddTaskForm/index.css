@@ -1,0 +1,18 @@
+:root {
+  --task-padding: 20px;
+  --task-color: #333;
+  --task-color-done: #ccc;
+
+}
+
+.AddTaskForm [type=submit] {
+  display: none;
+}
+
+.AddTaskForm input {
+  transition: background-color 0.3s linear;
+}
+
+.AddTaskForm:not(.is-empty) input {
+  background: #fff;
+}

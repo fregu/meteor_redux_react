@@ -1,0 +1,16 @@
+@media (min-width: 480px) {
+  ::-webkit-scrollbar {
+    width: 30px;
+    max-width: 5%;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: repeating-linear-gradient( 45deg, currentColor, currentColor 3px, transparent, 4px, transparent 8px );
+    border: 3px solid currentColor;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: inherit;
+    border: 3px solid currentColor;
+  }
+}

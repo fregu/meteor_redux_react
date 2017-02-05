@@ -1,0 +1,49 @@
+:root {
+  --task-padding: 20px;
+  --task-color: #333;
+  --task-color-done: #666;
+
+}
+
+.Task {
+  padding: var(--task-padding);
+  color: var(--task-color);
+}
+
+.Task-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.Task-checkbox {
+  position: absolute;
+  z-index: -1;
+  left: -999em;
+}
+
+.Task-checkbox + .Task-text::before {
+  content: "";
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  border: 1px solid #999;
+  border-radius: 2px;
+  display: inline-block;
+  margin-right: 1em;
+  line-height: 1em;
+  vertical-align: middle;
+}
+
+.Task-checkbox:checked + .Task-text::before {
+  content: "√";
+}
+
+.Task-label {
+  flex: 1;
+}
+
+.Task.is-done .Task-text {
+  color: var(--task-color-done);
+  text-decoration: line-through;
+}

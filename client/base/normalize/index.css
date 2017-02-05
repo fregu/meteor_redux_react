@@ -1,0 +1,31 @@
+:root {
+  --color-lightgreen: #B7FEC6;
+  --color-lightblue: #B7FAFE;
+  --color-blue: #2232FF;
+  --color-yellow: #FFFC8C;
+  --color-pink: #FFF3F9;
+  --color-white: #ffffff;
+}
+html {
+  background-color: var(--color-lightgreen);
+  color: var(--color-blue);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+a {
+  color: inherit;
+}
+
+p {
+  margin: 0 0 1em;
+}

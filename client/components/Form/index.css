@@ -1,0 +1,86 @@
+:root {
+  --color-lightgreen: #B7FEC6;
+  --color-lightblue: #B7FAFE;
+  --color-blue: #2232FF;
+  --color-green: #B7FEC6;
+  --color-yellow: #FFFC8C;
+  --color-pink: #FFF3F9;
+  --color-white: #ffffff;
+}
+
+.Form {
+  max-width: 500px;
+}
+
+.Form-field {
+  margin: 0 0 10px;
+}
+
+.Form-label--redundant {
+  position: absolute;
+  left: -999em;
+}
+
+.Form-submit,
+.Form-button {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+.Form-input {
+  border: 3px solid currentColor;
+  background: transparent;
+  font: inherit;
+  height: 3em;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 1em;
+  color: currentColor;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.Form-input:focus {
+  outline: none;
+}
+
+.Form-divider {
+  display: block;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  margin: 30px 0;
+}
+
+.Form-dividerText {
+  display: inline-block;
+  position: relative;
+  padding: 0 30px;
+}
+
+.Form-dividerText::before,
+.Form-dividerText::after {
+  content: "";
+  position: absolute;
+  border-bottom: 3px solid;
+  top: 50%;
+  margin-top: -1.5px;
+  right: -500px;
+  left: 100%;
+}
+
+.Form-dividerText::before {
+  right: 100%;
+  left: -500px;
+}
+
+.Form-input::placeholder {
+  color: currentColor;
+}
+
+.Form-input:focus::placeholder {
+  opacity: 0;
+}

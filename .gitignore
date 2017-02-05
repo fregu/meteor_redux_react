@@ -1,0 +1,7 @@
+node_modules/
+.both
+settings.json
+.env
+.DS_Store
+webpack.json
+database

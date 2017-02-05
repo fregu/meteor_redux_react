@@ -1,0 +1,10 @@
+:root {
+  --base-font-family: Helvetica, Arial, sans-serif;
+
+  --base-line-height: 1.5em;
+}
+
+.text {
+  font-family: var(--base-font-family);
+  line-height: var(--base-line-height);
+}

@@ -1,0 +1,43 @@
+:root {
+  --color-lightgreen: #B7FEC6;
+  --color-lightblue: #B7FAFE;
+  --color-blue: #2232FF;
+  --color-yellow: #FFFC8C;
+  --color-pink: #FFF3F9;
+  --color-green: #B7FEC6;
+  --color-white: #ffffff;
+}
+.theme-yellow {
+  background: var(--color-yellow) !important;
+  color: var(--color-blue) !important;
+}
+
+.theme-pink {
+  background: var(--color-pink) !important;
+  color: var(--color-blue) !important;
+}
+
+.theme-green {
+  background: var(--color-green) !important;
+  color: var(--color-blue) !important;
+}
+
+.theme-blue {
+  background: var(--color-lightblue) !important;
+  color: var(--color-blue) !important;
+}
+
+@media (min-width: 480px) {
+  .theme-yellow ::-webkit-scrollbar-thumb {
+    background: var(--color-yellow) !important;
+  }
+  .theme-green ::-webkit-scrollbar-thumb {
+    background: var(--color-green) !important;
+  }
+  .theme-blue ::-webkit-scrollbar-thumb {
+    background: var(--color-blue) !important;
+  }
+  .theme-pink ::-webkit-scrollbar-thumb {
+    background: var(--color-pink) !important;
+  }
+}
