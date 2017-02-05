@@ -35,6 +35,10 @@ const AddTaskForm = React.createClass({
     this.props.addTask({
       text: inputs.task
     });
+
+    this.setState({
+      value: ''
+    });
   },
 
   render() {
@@ -44,13 +48,14 @@ const AddTaskForm = React.createClass({
 
     return (
       <div className={className}>
-        <Form onSubmit={this.onSubmit} onChange={this.onChange} submit="Add" fields={[
+        <Form onSubmit={this.onSubmit} submit="Add" fields={[
           {
             type: 'text',
             id: 'task-input',
             placeholder: 'eg. Buy toothpicks..',
             name: 'task',
-            value: this.state.value
+            value: this.state.value,
+            onChange: this.onChange
           }
         ]}>
         </Form>

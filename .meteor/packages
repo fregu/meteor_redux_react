@@ -21,6 +21,6 @@ shell-server@0.2.1
 aldeed:collection2
 dburles:collection-helpers
 dburles:mongo-collection-instances
-standard-minifier-js
-ecmascript
+standard-minifier-js@1.2.1
+ecmascript@0.6.1
 juliancwirko:postcss
